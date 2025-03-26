@@ -1,0 +1,14 @@
+# Welcome the user
+print("Welcome to the Factorial Calculation Program!")
+n = input("Which factorial would you like to calculate? ")
+
+# Check if the input is a positive integer
+if not n.isdigit():
+    print("Error: Please enter a positive integer.")
+else:
+    num = int(n)
+    # Calculate factorial using a loop
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial = factorial * i
+    print("The factorial of", num, "is", factorial)
