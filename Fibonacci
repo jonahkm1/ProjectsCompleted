@@ -1,0 +1,13 @@
+def fibonacci_sequence(n):
+    fib_sequence = [0, 1]  # Starting with the first two terms
+    while len(fib_sequence) < n:
+        next_term = fib_sequence[-1] + fib_sequence[-2]
+        fib_sequence.append(next_term)
+    return fib_sequence[:n]
+
+# Get the value of n from the user
+n = int(input("Enter the value of n: "))
+fib_sequence = fibonacci_sequence(n)
+
+# Print the Fibonacci sequence
+print(f"The Fibonacci sequence up to {n} terms is: {fib_sequence}")
